@@ -1,0 +1,49 @@
+.container {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.title {
+  font-size: 80px;
+  font-weight: 800;
+  color: #ffffff;
+
+  .starbucks {
+    background: linear-gradient(90deg, #35c66b, #237249);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+}
+
+.description {
+  font-size: 20px;
+  font-weight: 400;
+  color: #d9d9d9;
+}
+
+.buttons_сontainer {
+  display: flex;
+  gap: 16px;
+}
+
+.numbers_container {
+  display: flex;
+  gap: 46px;
+
+  .number {
+    font-size: 62px;
+    font-weight: 400;
+    color: #ffffff;
+  }
+
+  .plus {
+    color: #35c66b;
+  }
+
+  .subtitle {
+    font-size: 20px;
+    font-weight: 400;
+    color: #d9d9d9;
+  }
+}

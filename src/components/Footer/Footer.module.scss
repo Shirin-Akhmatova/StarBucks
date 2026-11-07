@@ -1,0 +1,156 @@
+.footer {
+  width: 100%;
+  padding: 48px 0 32px;
+  color: #000;
+  box-shadow: 0 -2px 8px rgb(0 0 0 / 5%);
+}
+
+.container {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.columns {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 32px;
+  padding-bottom: 40px;
+}
+
+.column {
+  h3 {
+    margin-bottom: 24px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.4;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    list-style: none;
+  }
+
+  a {
+    color: #6b6b6b;
+    font-size: 14px;
+    line-height: 1.6;
+    text-decoration: none;
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: #000;
+      text-decoration: underline;
+    }
+  }
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  margin-bottom: 32px;
+  background-color: #ddd;
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.socialLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+
+  color: #fff;
+  background-color: #000;
+  font-size: 22px;
+  font-weight: 600;
+  text-decoration: none;
+
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
+
+  &:hover {
+    background-color: #00754a;
+    transform: translateY(-2px);
+  }
+}
+
+.legal {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px 28px;
+  margin-bottom: 28px;
+
+  a {
+    color: #000;
+    font-size: 14px;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.copyright {
+  color: #6b6b6b;
+  font-size: 13px;
+}
+
+/* Tablet */
+@media (max-width: 1000px) {
+  .columns {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 36px 24px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 650px) {
+  .footer {
+    padding-top: 32px;
+  }
+
+  .container {
+    padding: 0 20px;
+  }
+
+  .columns {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .column {
+    h3 {
+      margin-bottom: 16px;
+    }
+
+    ul {
+      gap: 14px;
+    }
+  }
+
+  .socials {
+    gap: 12px;
+  }
+
+  .legal {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .copyright {
+    line-height: 1.6;
+  }
+}

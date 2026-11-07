@@ -1,0 +1,13 @@
+.circle_container {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(100px);
+  background: linear-gradient(135deg, #2372498c, #35c66b8c);
+}
